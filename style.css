@@ -1,0 +1,35 @@
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #cbcaca;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+
+    color: #333;
+    margin-top: 20px;
+}
+
+#productos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 160px;
+    box-shadow: 0 0 10px ragba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
