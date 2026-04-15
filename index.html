@@ -1,38 +1,28 @@
-<!DOCTYPE html> 
-
+<!DOCTYPE html>
 <html lang="es">
 
-
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Tienda Tecnologica</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport"
-
-    content="viewport"
-    initial-scale="1.0">
-
-    <title>Tienda Tecnologica</title>
-
-
-    <link rel="stylesheet" href="style.css">
-
-
-
+<link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
-<body> 
+<h1>Tienda Tecnologica</h1>
 
+<button onclick="mostrarProductos()">Ver productos</button>
+<button onclick="mostrarAgotados()">Agotados</button>
+<button onclick="mostrarStockBajo()">Stock bajo</button>
+<button onclick="generarReportes()">Reportes</button>
 
- <h1>Tienda Tecnologica</h1>
-
-    <section id ="productos"></section>
+<div id="productos"></div>
+<div id="reportes"></div>
 
 <script src="app.js"></script>
 
-
 </body>
-
 </html>
-
