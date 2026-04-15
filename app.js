@@ -44,3 +44,26 @@ function mostrarProductos() {
 }
 
 mostrarProductos();
+
+
+
+function mostrarStockBajo() {
+    const stockBajo = productos.filter(p => p.stock > 0 && p.stock < 5);
+
+    console.log("productos con stock bajo: ");
+        console.log(stockBajo);
+
+        return stockBajo;
+}
+
+function mostrarAgotados() {
+    const agotados = productos.filter(p => p.stock === 0);
+
+     console.log("productos agotados: ");
+     console.log(agotados);
+
+     return agotados;
+}
+
+mostrarStockBajo();
+mostrarAgotados();
